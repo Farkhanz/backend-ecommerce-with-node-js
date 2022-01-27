@@ -1,0 +1,27 @@
+GET http://localhost:2000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsIm5hbWUiOiJLZXFpbmciLCJlbWFpbCI6ImtlcXVlZW5AZ21haWwuY29tIiwiaWF0IjoxNjQzMTkwNzg2LCJleHAiOjE2NDMyNzcxODZ9.R3_fqWTBf_buFVkRXVtXQ71VOCyz1EfwZWKZe5uyJDQ
+
+###
+POST http://localhost:2000/users
+Content-Type: application/json
+
+{
+    "name": "Keqing",
+    "email": "kequeen@gmail.com",
+    "password": "0001",
+    "confirmPassword":  "0001",
+    "address": "Liyue harbour",
+    "phone_number": "09921837192"
+}
+
+###
+POST http://localhost:2000/login
+Content-Type: application/json
+
+{
+    "email": "kequeen@gmail.com",
+    "password": "0001"    
+}
+
+###
+# GET  http://localhost:2000/token
