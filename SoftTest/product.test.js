@@ -7,7 +7,8 @@ jest.mock("../models/productModel.js", () => {
     return {
         Product: {
             products: {
-                findAll: () => mockFindIdProduct()
+                findAll: () => mockFindIdProduct(),
+                findId: () => mockFindIdProduct()
             },
         },
     };
