@@ -1,0 +1,15 @@
+POST http://localhost:3000/api/login HTTP/1.1
+content-type: application/json
+
+{
+    "name": "merchant1",
+    "password": "passmerchant1"
+}
+###
+POST http://localhost:3000/api/token HTTP/1.1
+content-type: application/json
+
+{
+    "id": 1,
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZXJjaGFudElkIjoxLCJtZXJjaGFudE5hbWUiOiJtZXJjaGFudDEiLCJpYXQiOjE2NDQwNzA5NTEsImV4cCI6MTY0NDE1NzM1MX0.sRifJwHPG16GnuLiQ8uN4SJMSH65ro0i6dpYMD-A7Ck"
+}

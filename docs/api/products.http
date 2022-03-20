@@ -1,0 +1,35 @@
+POST http://localhost:3000/api/merchants/1/products HTTP/1.1
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZXJjaGFudElkIjoxLCJtZXJjaGFudE5hbWUiOiJtZXJjaGFudDEiLCJpYXQiOjE2NDQwNzM0OTAsImV4cCI6MTY0NDA3NDM5MH0._mkC-7dvsXVVZexzvrQmIsGjgSJVg1LGoR1fhobeJiY
+
+{
+    "name": "product111",
+    "quantity": 5,
+    "price": 3000
+}
+###
+GET http://localhost:3000/api/merchants/1/products HTTP/1.1
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZXJjaGFudElkIjoxLCJtZXJjaGFudE5hbWUiOiJtZXJjaGFudDEiLCJpYXQiOjE2NDQwNzM0OTAsImV4cCI6MTY0NDA3NDM5MH0._mkC-7dvsXVVZexzvrQmIsGjgSJVg1LGoR1fhobeJiY
+
+###
+
+GET http://localhost:3000/api/merchants/1/products/1 HTTP/1.1
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZXJjaGFudElkIjoxLCJtZXJjaGFudE5hbWUiOiJtZXJjaGFudDEiLCJpYXQiOjE2NDQwNzM0OTAsImV4cCI6MTY0NDA3NDM5MH0._mkC-7dvsXVVZexzvrQmIsGjgSJVg1LGoR1fhobeJiY
+###
+
+PUT http://localhost:3000/api/merchants/1/products/1 HTTP/1.1
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZXJjaGFudElkIjoxLCJtZXJjaGFudE5hbWUiOiJtZXJjaGFudDEiLCJpYXQiOjE2NDQwNzM3NzgsImV4cCI6MTY0NDA3NDY3OH0.pMA7VfAUbUzyezNdAcX0paP-lmJ2d4qMLe5D8jyTkQs
+
+{
+    "name": "updatedproduct",
+    "quantity": 15,
+    "price": 5000
+}
+###
+
+DELETE http://localhost:3000/api/merchants/1/products/2 HTTP/1.1
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZXJjaGFudElkIjoxLCJtZXJjaGFudE5hbWUiOiJtZXJjaGFudDEiLCJpYXQiOjE2NDQwNzM0OTAsImV4cCI6MTY0NDA3NDM5MH0._mkC-7dvsXVVZexzvrQmIsGjgSJVg1LGoR1fhobeJiY

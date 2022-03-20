@@ -1,0 +1,1 @@
+- catch throwed TypeError and return 400
